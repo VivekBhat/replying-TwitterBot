@@ -1,0 +1,18 @@
+{
+  "name": "npm_practise",
+  "version": "1.0.0",
+  "description": "trying twitter demo",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twitter",
+    "bot"
+  ],
+  "author": "Vivek Bhat",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.5"
+  }
+}

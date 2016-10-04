@@ -14,13 +14,33 @@ function tweetEvent(eventMsg) {
 	var text = eventMsg.text;
 	var from = eventMsg.user.screen_name;
 	
-	console.log(replyto + ' ' + from);
+	console.log( 'from: ' + eventMsg.user.name);
 	
 	if (replyto == 'frieza175') {
 
 		var newtweet = '@' + from + ' thanks';
 		console.log(newtweet)
+		tweetIt(newtweet);
 
 	}
 
+}
+
+function tweetIt(txt){
+
+	var tweet = {
+		status : txt
+	}
+
+	T.post('statuses/update', tweet, tweeted);
+	
+
+function tweeted(err, data, response) {
+	if (err) {
+		console.log("Something went wrong my friend.. I think " + err.message);
+	} else {
+		console.log("It Worked!");
+	}
+
+}
 }

@@ -1,0 +1,52 @@
+console.log("replier bot is starting..")
+var Twit = require('twit');
+var config = require('./config');
+var T = new Twit(config);
+
+
+var stream = T.stream('user');
+
+stream.on('tweet', tweetEvent);
+
+function tweetEvent(eventMsg) {
+	
+	var replyto = eventMsg.in_reply_to_screen_name;
+	var text = eventMsg.text;
+	var screenname = eventMsg.user.screen_name;
+	var name = eventMsg.user.name;
+	
+	console.log( 'from: ' + eventMsg.user.name);
+	
+	if (replyto == 'frieza175') {
+
+		var newtweet = 'thanks a lot for mentioning us ' + name + ' you are awesome..' ;
+		console.log(newtweet)
+		tweetIt(screenname,newtweet);
+
+	}
+
+}
+
+function tweetIt(screenname, txt){
+
+	var tweet = {
+		screen_name : screenname , 
+		text: txt
+	}
+
+// setTimeout(function() {T.post('statuses/update', tweet, tweeted)}, 1000*20);
+
+   setTimeout(function() {T.post('direct_messages/new', tweet , callback)}, 1000*20);
+
+	
+	
+
+function callback(err, data, response) {
+	if (err) {
+		console.log(err.message);
+	} else {
+		console.log("It Worked!");
+	}
+
+}
+}

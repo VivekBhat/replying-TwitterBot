@@ -19,14 +19,11 @@ function tweetEvent(eventMsg) {
 	
 	if (replyto == 'frieza175') {
 
-		var newtweet = 'thanks a lot for mentioning us ' + name + ' you are awesome..' ;
-		console.log(newtweet)
+		var newtweet = 'Thanks a lot for mentioning us ' + name + ' you are awesome..' ;
+		console.log("Waiting for 25 seconds")
 		tweetIt(screenname,newtweet);
-
 	}
-
 }
-
 function tweetIt(screenname, txt){
 
 	var tweet = {
@@ -36,7 +33,7 @@ function tweetIt(screenname, txt){
 
 // setTimeout(function() {T.post('statuses/update', tweet, tweeted)}, 1000*20);
 
-   setTimeout(function() {T.post('direct_messages/new', tweet , callback)}, 1000*20);
+   setTimeout(function() {T.post('direct_messages/new', tweet , callback)}, 1000*25);
 
 	
 	
@@ -46,7 +43,7 @@ function callback(err, data, response) {
 		console.log(err.message);
 	} else {
 		console.log("It Worked!");
-	}
+		}
 
-}
+	}
 }

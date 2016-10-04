@@ -18,7 +18,7 @@ function tweetEvent(eventMsg) {
 	
 	if (replyto == 'frieza175') {
 
-		var newtweet = '@' + from + ' thanks';
+		var newtweet = 'thanks a lot @' + from ;
 		console.log(newtweet)
 		tweetIt(newtweet);
 
@@ -32,7 +32,10 @@ function tweetIt(txt){
 		status : txt
 	}
 
-	T.post('statuses/update', tweet, tweeted);
+setTimeout(function() {T.post('statuses/update', tweet, tweeted)}, 1000*20);
+
+
+	
 	
 
 function tweeted(err, data, response) {

@@ -18,7 +18,7 @@ function tweetEvent(eventMsg) {
 	
 	if (replyto == 'frieza175') {
 
-		var newtweet = 'thanks a lot @' + from + 'you are awesome..' ;
+		var newtweet = 'thanks a lot @' + from + ' you are awesome..' ;
 		console.log(newtweet)
 		tweetIt(newtweet);
 

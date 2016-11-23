@@ -13,3 +13,6 @@ This twitter bot will send you a private direct message if you tweet with [@frie
 
   ![Bot Replies](https://github.com/VivekBhat/replying-TwitterBot/blob/master/resources/reply.png)
 
+  ---
+  
+  

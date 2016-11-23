@@ -33,11 +33,8 @@ function tweetIt(txt){
 	}
 
 setTimeout(function() {T.post('statuses/update', tweet, tweeted)}, 1000*20);
-
-
 	
 	
-
 function tweeted(err, data, response) {
 	if (err) {
 		console.log("Something went wrong my friend.. I think " + err.message);

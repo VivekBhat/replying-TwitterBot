@@ -4,7 +4,7 @@
   "description": "trying twitter demo",
   "main": "bot.js",
   "scripts": {
-    "start": "bot.js", 
+    "start": "bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,6 +14,7 @@
   "author": "Vivek Bhat",
   "license": "ISC",
   "dependencies": {
+    "all": "0.0.0",
     "twit": "^2.2.5"
   }
 }

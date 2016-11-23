@@ -17,7 +17,7 @@ function tweetEvent(eventMsg) {
 	
 	console.log( 'from: ' + eventMsg.user.name);
 	
-	if (replyto == 'frieza175') {
+	if (replyto == 'botifulbot') {
 
 		var newtweet = 'Thanks a lot for mentioning us ' + name + ' you are so awesome..' ;
 		console.log("Waiting for 25 seconds")

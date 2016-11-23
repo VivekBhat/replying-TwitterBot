@@ -16,8 +16,12 @@ This twitter bot will send you a private direct message if you tweet with [@frie
   ---
   
 ## Running the bot
-    * You will need an OAuth key from [https://dev.twitter.com/](https://dev.twitter.com/) for your bot
-    * Then update your environments with NPM and NODE
-    * run node sendingmessage.js
-    * This bot starts listening for its mentions on Twitter.
-    * It replies as shown above to the user who mentions its username.
+* You will need an OAuth key from [https://dev.twitter.com/](https://dev.twitter.com/) for your bot
+
+* Then update your environments with NPM and NODE
+
+* run node sendingmessage.js
+
+* This bot starts listening for its mentions on Twitter.
+
+* It replies as shown above to the user who mentions its username.
